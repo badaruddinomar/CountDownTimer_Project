@@ -6,8 +6,9 @@ const minuteEl = document.querySelector(`.minutes`);
 const secondEL = document.querySelector(`.seconds`);
 
 const time = () => {
-  let date = new Date(`1 Aug 2022`);
   let currentDate = new Date();
+
+  let date = new Date(`1 Jan ${currentDate.getFullYear() + 1}`);
 
   let totalSecond = Math.trunc((date - currentDate) / 1000);
 
@@ -24,3 +25,8 @@ const time = () => {
     currentSecond < 10 ? `0${currentSecond}` : currentSecond;
 };
 setInterval(time, 1000);
+
+const date1 = new Date();
+
+// console.log(date1.getDate());
+console.log(date1.getFullYear() + 1);
