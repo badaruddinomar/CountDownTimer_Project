@@ -23,12 +23,15 @@ body {
   letter-spacing: 2px;
   margin-top: 7rem;
   color: black;
+  text-align: center;
+  line-height: 1.6;
 }
 .container {
   width: 100%;
   height: 100%;
+  margin: 5rem 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .container div {
@@ -41,6 +44,7 @@ body {
   border-radius: 4px;
   background: #e0e0e0;
   box-shadow: 5px 5px 17px #c7c7c7, -5px -5px 17px #f9f9f9;
+
   padding: 2rem 2.5rem;
   border-radius: 3px;
   color: black;
@@ -54,4 +58,35 @@ body {
   font-size: 2rem;
   color: gray;
   font-weight: bold;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+  .container div {
+    padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 38%;
+  }
+  .container div {
+    padding: 0.9rem 1.3rem;
+  }
 }
